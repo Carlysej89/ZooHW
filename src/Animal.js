@@ -12,7 +12,10 @@
     changeName(newName){
       this.name = newName;
     }
-
+    ageInYears(){
+      let currentDate = new Date();
+      return currentDate.getFullYear() - this.dateOfBirth.getFullYear();
+    }
   };
 
 }());

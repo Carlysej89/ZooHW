@@ -11,7 +11,7 @@
 
   };
 
-    let me = new window.zoo.Cat('lion', '4/22/1961');
-    console.log(me.name, me.dateOfBirth);
+    let me = new window.zoo.Cat('lion', new Date('4/22/1961'));
+    console.log(me.name, me.dateOfBirth, me.ageInYears());
 
 }());
