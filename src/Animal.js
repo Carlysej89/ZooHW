@@ -16,6 +16,9 @@
       let currentDate = new Date();
       return currentDate.getFullYear() - this.dateOfBirth.getFullYear();
     }
+    static scientificName(){
+      return 'Panthera Leo, Giraffa';
+    }
   };
 
 }());
