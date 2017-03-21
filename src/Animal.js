@@ -10,9 +10,16 @@
       * @return {Date}  dateOfBirth date the animal was created
       */
     constructor(name, dateOfBirth) {
-      this.name = name;
+      if(typeof(name) === 'string'){
+        this.name = name;
+      } else {
+        let theError = new TypeError('name should be a string');
+        throw theError;
+      }
+
       if (!(dateOfBirth instanceof Date)){
-        dateOfBirth = new Date();
+       dateOfBirth = new Date();
+
       }
       this.dateOfBirth = dateOfBirth;
 

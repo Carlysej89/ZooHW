@@ -4,13 +4,11 @@
  let Animal = window.zoo.Animal;
 
  window.zoo.Giraffe = class Giraffe extends Animal {
-   constructor(name, dateOfBirth){
+   constructor(name, dateOfBirth, height){
      super(name, dateOfBirth);
-
+      this.height = height;
    }
  };
- let me = new window.zoo.Giraffe('Geffory the Giraffe', new Date('12/2/2002', scientificName()));
 
- console.log(me.name, me.dateOfBirth, me.ageInYears());
 
 }());
