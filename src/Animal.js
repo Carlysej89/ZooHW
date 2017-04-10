@@ -31,8 +31,9 @@
       let currentDate = new Date();
       return currentDate.getFullYear() - this.dateOfBirth.getFullYear();
     }
-    static scientificName(){
-      return 'Panthera Leo, Giraffa';
+    toString(){
+      let result = this.name + 'was born' + this.dateOfBirth.getFullYear;
+      return result;
     }
   };
 

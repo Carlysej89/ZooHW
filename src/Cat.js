@@ -5,15 +5,19 @@
   let Animal = window.zoo.Animal;
 
   window.zoo.Cat = class Cat extends Animal {
-    constructor(name, dateOfBirth, height){
+    constructor(name, dateOfBirth, methodOfTravel){
       super(name, dateOfBirth);
-       this.height = height;
-       this.legs = 4;
-       
+       this.species = Cat.toString();
+       this.offSpring = 'kittens';
+       this.methodOfTravel = methodOfTravel;
+
+    }
+    static toString(){
+      return 'Cats are felines';
+    }
+    methodOfTravel(){
+      return (speed*duration);
     }
 
   };
-
-
-
 }());
